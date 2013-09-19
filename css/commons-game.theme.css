@@ -1,0 +1,71 @@
+/**
+ * Achievements style overrides.
+ */
+table.achievement-leaderboard-first, table.achievement-leaderboard-recent {
+  float: none;
+  width: 100%;
+}
+
+div.achievement-leaderboard-first, div.achievement-leaderboard-recent {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+[dir="rtl"] div.achievement-leaderboard-first, [dir="rtl"] div.achievement-leaderboard-recent {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 800px) {
+  div.achievement-leaderboard-first {
+    width: 48.3871%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  [dir="rtl"] div.achievement-leaderboard-first {
+    float: right;
+    margin-left: -100%;
+    margin-right: 0%;
+    clear: none;
+  }
+  div.achievement-leaderboard-recent {
+    width: 48.3871%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  [dir="rtl"] div.achievement-leaderboard-recent {
+    float: left;
+    margin-right: 0;
+    margin-left: 0;
+    clear: none;
+  }
+}
+
+table.achievement-leaderboard {
+  overflow: invisible;
+}
+.commons-pod table.achievement-leaderboard tr {
+  background: none;
+}
+.commons-pod table.achievement-leaderboard, .commons-pod table.achievement-leaderboard th, .commons-pod table.achievement-leaderboard td {
+  border-right: none;
+  border-left: none;
+}
+table.achievement-leaderboard th:last-child, table.achievement-leaderboard td:last-child {
+  display: none;
+}
+@media (min-width: 450px) {
+  table.achievement-leaderboard th:last-child, table.achievement-leaderboard td:last-child {
+    display: table-cell;
+  }
+}

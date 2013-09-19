@@ -1,0 +1,8 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+$grids: add-grid(2);
+$grids: add-grid(2 5 2 at 767px);
+$gutters: 1/15;
+$direction: both;

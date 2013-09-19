@@ -1,0 +1,92 @@
+@import "base";
+
+/**
+ * Achievements style overrides.
+ */
+table {
+  &.achievement-leaderboard-first,
+  &.achievement-leaderboard-recent {
+    float: none;
+    width: 100%;
+  }
+}
+
+div {
+  @include layout(1) {
+    &.achievement-leaderboard-first,
+    &.achievement-leaderboard-recent {
+      @include box-sizing(border-box);
+      @include grid-span(1, 1);
+    }
+  }
+
+  @include breakpoint(800px) {
+    @include layout(2) {
+      &.achievement-leaderboard-first {
+        @include grid-span(1, 1);
+      }
+
+      &.achievement-leaderboard-recent {
+        @include grid-span(1, 2);
+      }
+    }
+  }
+}
+
+table.achievement-leaderboard {
+  // th {
+  //   text-align: center;
+  //   overflow: hidden;
+  //   -ms-text-overflow: ellipsis;
+  //   text-overflow: ellipsis;
+  //   vertical-align: bottom;
+  // }
+
+  // td {
+  //   @include box-sizing(border-box);
+  // }
+
+  // .achievement-leaderboard-rank,
+  // .achievement-leaderboard-points,
+  // .achievement-leaderboard-unlocks {
+  //   width: 6em;
+  //   max-width: 6%;
+  // }
+
+  // .achievement-leaderboard-rank {
+  //   text-align: right;
+  // }
+
+  // .achievement-leaderboard-points,
+  // .achievement-leaderboard-unlocks {
+  //   text-align: center;
+  // }
+
+  // .achievement-leaderboard-latest {
+  //   width: 16em;
+  //   max-width: 30%;
+  // }
+
+  overflow: invisible;
+
+  .commons-pod & {
+    tr {
+      background: none;
+    }
+
+    &, th, td {
+      border-right: none;
+      border-left: none;
+    }
+  }
+
+  th, td {
+    &:last-child {
+      display: none;
+
+      @include breakpoint(450px) {
+        display: table-cell;
+      }
+    }
+  }
+}
