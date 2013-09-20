@@ -1,5 +1,5 @@
 jQuery(function($) {
-    var height = 130,
+    var height = 140,
         margin = 10,
         timeout,
         notifications = $('.achievement-notification').dialog({

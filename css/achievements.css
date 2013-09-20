@@ -8,8 +8,6 @@
   /* non-JS fallback */
   *zoom: 1;
   border: 1px solid #bbb;
-  margin: 0.8em auto;
-  padding: .5em;
   line-height: 1.1em;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
@@ -29,6 +27,11 @@
 .achievement:after,
 .achievement-badge:after {
   clear: both;
+}
+.commons-pod .achievement, .commons-pod
+.achievement-badge {
+  margin: 0.8em auto;
+  padding: .5em;
 }
 
 .achievement-secret,
@@ -56,6 +59,7 @@
   width: 100%;
   padding: .5em;
   font-size: .7em;
+  line-height: 1.4em;
   font-weight: bold;
   background: #efefef;
   color: #666;
@@ -64,8 +68,13 @@
 .achievement-points-box .achievement-unlocked-stats {
   display: inline-block;
 }
+.achievement-points-box .achievement-points {
+  font-size: 2.6em;
+  line-height: 1em;
+}
 .achievement-points-box .achievement-unlocked-stats {
   float: right;
+  text-align: center;
 }
 
 /**
@@ -95,7 +104,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  top: -150px;
+  top: -160px;
   float: right;
   width: 94% !important;
   max-width: 30em;

@@ -7,11 +7,14 @@
 .achievement-badge {
   @include clearfix;
   border: 1px solid #bbb;
-  margin: 0.8em auto;
-  padding: .5em;
   line-height: 1.1em;
   @include border-radius(.2em);
   background: #e6e6e6;
+
+  .commons-pod & {
+    margin: 0.8em auto;
+    padding: .5em;
+  }
 }
 
 .achievement-secret,
@@ -36,6 +39,7 @@
   width: 100%;
   padding: .5em;
   font-size: .7em;
+  line-height: 1.4em;
   font-weight: bold;
   background: #efefef;
   color: #666;
@@ -45,8 +49,14 @@
     display: inline-block;
   }
 
+  .achievement-points {
+    font-size: 2.6em;
+    line-height: 1em;
+  }
+
   .achievement-unlocked-stats {
     float: right;
+    text-align: center;
   }
 }
 
@@ -72,7 +82,7 @@
 .achievement-notification {
   @include box-sizing(border-box);
   position: relative;
-  top: -150px;
+  top: -160px;
   float: right;
   width: 94% !important;
   max-width: 30em;

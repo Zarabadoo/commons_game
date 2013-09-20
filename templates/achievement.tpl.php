@@ -26,7 +26,7 @@
     <div class="achievement-description"><?php print $achievement['description']; ?></div>
   </div>
 
-  <div class="achievement-points-box">
+  <div class="achievement-points-box clearfix">
     <div class="achievement-points"><?php print $achievement['points']; ?></div>
     <div class="achievement-unlocked-stats">
       <div class="achievement-unlocked-timestamp"><?php print render($unlocked_date); ?></div>
