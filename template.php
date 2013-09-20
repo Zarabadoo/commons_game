@@ -34,3 +34,15 @@ function commons_game_page_alter(&$page) {
     $page['content']['system_main']['achievements']['leaderboard']['relative']['#header'] = $page['content']['system_main']['achievements']['leaderboard']['top']['#header'];
   }
 }
+
+/**
+ * Implements hook_js_alter().
+ */
+function commons_game_js_alter(&$js) {
+  // The achievements module has some inflexible styling added by javascript.
+  // We will replace it with a version that will allow a responsive style.
+  $path = drupal_get_path('module', 'achievements') . '/achievements.js';
+  if (isset($js[$path])) {
+    $js[$path]['data'] = drupal_get_path('theme', 'commons_game') . '/scripts/achievements.js';
+  }
+}

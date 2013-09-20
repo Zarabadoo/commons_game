@@ -4,6 +4,7 @@ base theme = commons_origins
 core = 7.x
 
 stylesheets[all][] = css/commons-game.theme.css
+stylesheets[all][] = css/achievements.css
 
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
